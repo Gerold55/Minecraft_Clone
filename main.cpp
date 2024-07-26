@@ -1,7 +1,7 @@
 #include <exception>
 #include <string>
 #include <iostream>
-#include <SDL.h>
+#include <SDL2/SDL.h>
 
 class InitError : public std::exception
 {

@@ -13,6 +13,7 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-g" />
+					<Add directory="include" />
 				</Compiler>
 			</Target>
 			<Target title="Release">
@@ -22,6 +23,7 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-O2" />
+					<Add directory="include" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
@@ -45,7 +47,20 @@
 		<ExtraCommands>
 			<Add after="XCOPY $(#sdl2)\bin\*.dll $(TARGET_OUTPUT_DIR) /D /Y" />
 		</ExtraCommands>
+		<Unit filename="CMakeLists.txt" />
+		<Unit filename="include/BlockManager.h" />
+		<Unit filename="include/LuaBindings.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="scripts/blocks.lua" />
+		<Unit filename="shader.h" />
+		<Unit filename="shaders/fragment.glsl" />
+		<Unit filename="shaders/vertex.glsl" />
+		<Unit filename="src/BlockManager.cpp" />
+		<Unit filename="src/LuaBindings.cpp" />
+		<Unit filename="src/cube.cpp" />
+		<Unit filename="src/cube.h" />
+		<Unit filename="src/main.cpp" />
+		<Unit filename="src/shader.cpp" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
 		</Extensions>
